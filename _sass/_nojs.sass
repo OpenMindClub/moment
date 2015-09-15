@@ -1,0 +1,68 @@
+.no-js-menu
+
+    ul
+        padding: 10px 0
+        margin-bottom: 0
+
+    li
+        margin: 0
+        padding: 3px 0
+        list-style: none
+
+        +breakpoint(sm)
+            padding: 5px 0
+
+        +breakpoint(md)
+            padding: 10px 0
+
+        i
+            padding: 0 20px
+            color: #DADADA
+            font-style: normal
+            +font-size(14)
+        a
+            color: #DADADA
+            font-family: $sans
+            font-weight: 700
+            border-bottom: 0 transparent
+            +font-size(12)
+
+            &:hover
+                border-bottom: none
+                color: #fff
+
+.hero-image
+    .no-js-menu
+        padding-left: 50px
+.no-js
+
+    .sidebar
+        height: 400px
+
+        +breakpoint(sm)
+            height: 450px
+
+        +breakpoint(md)
+            width: 400px
+            height: 100%
+            position: fixed
+            background-color: #f5f5f5
+
+        +breakpoint(lg)
+            width: 464px
+
+    .site-info
+        padding: 0 15px 0 15px
+
+        +breakpoint(sm)
+            padding: 0 100px 0 100px
+
+        +breakpoint(md)
+            padding: 0 20px
+            position: absolute
+            bottom: 40px
+        +breakpoint(lg)
+            padding: 0 30px
+
+.no-js-dashboard
+    margin-top: 60px

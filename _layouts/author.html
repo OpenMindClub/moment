@@ -1,0 +1,31 @@
+---
+layout: with-sidebar
+---
+
+<div class="author-bio">
+
+    <img src='{{ "/img/" | append : page.author_avatar | prepend: site.baseurl }}.jpg'>
+
+    <div class="author-bio__info">
+        {{ content }}
+    </div>
+</div>
+
+<h2 class="favorites">Most recommended posts</h2>
+
+<div class="posts-block animated fadeIn ">
+
+    {% for post in page.fav_posts %}
+    <article class="post author-page">
+        <div class="post-preview col-xs-10  no-gutter">
+            <h2><a href="{{ post[1][1] | prepend: '/' | prepend: site.baseurl }}">{{ post[1][0] }}</a></h2>
+            <p>{{ post[1][2] }}</p>
+        </div>
+    </article>
+    {% endfor %}
+
+    <div class="view-all-by-author">
+        <a href="{{ site.baseurl }}">View All Post by {{ page.author_name }} <i class="fa fa-chevron-right"></i></a>
+    </div>
+</div>
+
